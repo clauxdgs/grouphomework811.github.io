@@ -37,15 +37,15 @@ function validarForm(evento){
   var pass1 = document.getElementById('password1').value;
   if (pass1.length < 6) {
     showAlertError();
-    changeColor("pass1");
+    changeColor("password1");
     return;
   }
 
   var pass2 = document.getElementById('password2').value;
   if (pass2 !== pass1) {
     showAlertError();
-    changeColor("pass1");
-    changeColor("pass2");
+    changeColor("password1");
+    changeColor("password2");
     return;
   }
 
