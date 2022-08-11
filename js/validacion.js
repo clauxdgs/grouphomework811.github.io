@@ -22,12 +22,13 @@ function validarForm(evento){
     changeColor("nombre");
     return;
   }
+
   var apellido = document.getElementById('apellido').value;
   if(apellido.length == 0) {
     showAlertError();
     changeColor("apellido");
     return;
-  }
+  } 
   var email = document.getElementById('email').value;
   if(email.length == 0) {
     showAlertError();
@@ -57,6 +58,7 @@ function validarForm(evento){
   }
 
 
+  showAlertSuccess();
   this.submit();
 }
 
